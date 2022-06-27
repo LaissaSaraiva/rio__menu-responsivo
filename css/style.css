@@ -9,10 +9,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  background: rgb(0, 0, 0, 0.3);
+  height: 11vh;
 }
 
 #cabecalho a{
   text-decoration: none;
+  color: #fff;
 }
 
 .logo {
@@ -27,6 +30,10 @@
   gap: 20px;
 }
 
+#nav i {
+  font-size: 20px;
+}
+
 #menu li {
   list-style: none;
   font-size: 20px;
@@ -34,6 +41,10 @@
 
 
 /* Background */
-main {
-  
+body {
+  background-image: url(/img/bg_rio-de-janeiro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
 }
