@@ -81,7 +81,7 @@ main {
   background-image: url(/img/bg_rio-de-janeiro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom -15px;
+  background-position: center bottom;
   height: 100vh;
 }
 
