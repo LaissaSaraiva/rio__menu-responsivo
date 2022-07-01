@@ -7,6 +7,15 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+:root {
+  --background-principal: rgba(2, 61, 51, 0.8);
+  --branco-principal: #fff;
+  --preto-principal: rgb(0, 0, 0);
+  --hover-principal: rgb(0, 0, 0, 0.3);
+  --hover-secundario: rgb(0, 98, 128);
+  --border-bottom-principal: rgb(255, 255, 255, 0.2);
+}
+
 /* Header */
 
 #cabecalho {
@@ -14,14 +23,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: rgba(2, 61, 51, 0.8);
+  background: var(--background-principal);
   height: 70px;
 }
 
 #cabecalho a {
   text-decoration: none;
   font-size: 20px;
-  color: #fff;
+  color: var(--branco-principal);
 }
 
 .logo {
@@ -38,7 +47,7 @@
 #nav i {
   font-size: 30px;
   display: none;
-  color: #fff;
+  color: var(--branco-principal);
 }
 
 #menu {
@@ -57,7 +66,7 @@
 
 #menu li::after {
   content: " | ";
-  color: #fff;
+  color: var(--branco-principal);
 }
 
 #menu li:last-child::after {
@@ -66,7 +75,7 @@
 
 #menu a:hover {
   font-weight: 400;
-  text-shadow: 1px 1px 4px rgb(0, 0, 0);
+  text-shadow: 1px 1px 4px var(--preto-principal);
 }
 
 /* Background */
@@ -84,8 +93,8 @@ main {
 #rodape {
   text-align: center;
   font-size: 20px;
-  text-shadow: 1px 1px 1px #000;
-  color: #fff;
+  text-shadow: 1px 1px 1px var(--preto-principal);
+  color: var(--branco-principal);
   position: relative;
   bottom: 30px;
   height: 0;
@@ -93,18 +102,18 @@ main {
 }
 
 #rodape a {
-  color: #fff;
+  color: var(--branco-principal);
   text-decoration: none;
 }
 
 #rodape a:hover {
-  color: rgb(0, 98, 128);
+  color: var(--hover-secundario);
 }
 
 /* Responsividade  */
 
 @media (max-width: 878px) {
-  main{
+  main {
     background-position: bottom left;
   }
   #nav i {
@@ -117,7 +126,7 @@ main {
     width: 100%;
     top: 70px;
     right: 0;
-    background: rgba(2, 61, 51, 0.8);
+    background: var(--background-principal);
     height: 0;
     z-index: 1000;
     transition: 0.6s;
@@ -135,11 +144,11 @@ main {
     display: block;
     padding: 15px 10px;
     margin: 0 5px;
-    border-bottom: 2px solid rgb(255, 255, 255, 0.2);
+    border-bottom: 2px solid var(--border-bottom-principal);
   }
 
   #menu a:hover {
-    background-color: rgb(0, 0, 0, 0.3);
+    background-color: var(--hover-principal);
   }
 
   #menu li::after {
